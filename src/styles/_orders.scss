@@ -1,0 +1,31 @@
+.orders {
+    padding-top: 146px;
+    padding-bottom: 90px;
+
+    background: url('../imgs/orders_bg.png') no-repeat bottom right;
+
+
+    &__wrapper {
+        display: flex;
+        
+    }
+
+    &__list {
+        margin-right: 270px;
+
+
+        li {
+            color: $main-black;
+            font-size: 48px;
+            margin-bottom: 54px;
+        }
+    }
+
+    &__contacts {
+        margin-top: 354px;
+
+        color: $main-black;
+        line-height: 40px;
+        font-size: 40px;
+    }
+}

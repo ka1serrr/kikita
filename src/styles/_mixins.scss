@@ -1,0 +1,32 @@
+@mixin input {
+    max-width: 594px;
+    width: 100%;
+    background: #EFEFEF;
+    border-radius: 4px;
+    padding: 33px 23px;
+
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 28px;
+
+    &::placeholder {
+        color: #686868;
+        font-size: 28px;
+        font-family: inherit;
+        font-size: 300;
+    }
+}
+
+@mixin btn {
+    background: $secondary-orange;
+    max-width: 178px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 25px 0;
+    text-align: center;
+    
+    color: $secondary-black;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 300px;
+}
