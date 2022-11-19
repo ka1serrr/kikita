@@ -28,5 +28,19 @@
     color: $secondary-black;
     font-size: 28px;
     line-height: 28px;
-    font-weight: 300px;
+    font-weight: 300;
+    
+}
+
+@mixin def-text {
+    font-size: 30px;
+    left: 30px;
+
+    font-weight: 300;
+}
+@mixin def-text-400 {
+    font-size: 30px;
+    left: 30px;
+
+    font-weight: 400;
 }

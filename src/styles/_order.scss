@@ -1,0 +1,173 @@
+.order {
+    margin-top: 131px;
+    padding-bottom: 115px ;
+
+    &__wrap {
+        display: flex;
+       
+    }
+
+    &__wrap-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 107px;
+    }
+
+    .btn__order {
+        margin-top: 33px;
+        display: block;
+        max-width: 428px;
+        width: 428px;
+        padding: 17px 25px;       
+        text-align: left;
+        @include def-text;
+
+        display: flex;
+        justify-content: space-between;
+        background: #E5E5E5;
+        
+        .order__btn-complete {
+            color: #ADADAD;
+
+        }
+        
+
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+
+        &_active {
+            background: $main-black;
+            color: #FFF;
+        }
+
+        &:hover {
+            background: $main-orange;
+            color: #fff;
+
+            .order__btn-complete {
+                color: #fff
+            }
+        }
+    }
+
+
+   
+
+    &__category {
+        color: $main-orange;
+        @include def-text-400;
+        margin-bottom: 34px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 64px;
+        color: $main-black;
+    }
+
+    &__subtitle { 
+        margin-top: 17px;
+        color:#646464;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+
+    &__content {
+        margin-top: 118px;
+    }
+
+    &__label {
+        margin-top: 45px;
+        margin-left: 68px;
+        position: relative;
+        display: block;
+        @include def-text;
+        color: $main-black;
+    }
+
+    &__span {
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(41%);
+        left: -68px;
+        height: 43px;
+        width: 43px;
+        border-radius: 50%;
+        background-color:#E8E8E8;
+    }
+
+    &__radio {
+        opacity: 0;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    &__text {
+        @include def-text;
+        color: #646464;
+    }
+    
+    &__radio:checked  + .order__span{
+        // по-другому залупа не работала
+            background-color: $main-orange;      
+    }
+
+    &__input {
+        max-width: 310px;
+        padding: 12px 22px;
+        @include def-text;
+        height: 73px;
+
+        &_long {
+            max-width: 940px;
+        }
+        
+    }
+
+    &__btns {
+        margin-top: 86px;
+        display: flex;
+    }
+
+    &__btn-prev {
+        margin-right: 75px;
+        max-width: 296px;
+        width: 298px;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__btn-next {
+        max-width: 296px;
+        width: 298px;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #fff;
+        background-color: $main-black;
+    }
+    
+    &__textarea {
+        background-color: #EDEDED;
+        border-radius: 4px;
+        @include def-text;
+        max-width: 940px;
+        width: 100%;
+        height: 164px;
+        resize: none;        
+
+        padding: 12px;
+
+        &::placeholder {
+            @include def-text;
+            color: #8E8E8E;
+        }
+    }
+}
