@@ -1,6 +1,5 @@
 @mixin input {
-    max-width: 594px;
-    width: 100%;
+    width: 594px;
     background: #EFEFEF;
     border-radius: 4px;
     padding: 33px 23px;
@@ -19,8 +18,7 @@
 
 @mixin btn {
     background: $secondary-orange;
-    max-width: 178px;
-    width: 100%;
+    width: 178px;
     border-radius: 4px;
     padding: 25px 0;
     text-align: center;
@@ -38,9 +36,101 @@
 
     font-weight: 300;
 }
+
 @mixin def-text-400 {
     font-size: 30px;
     left: 30px;
 
     font-weight: 400;
+}
+
+@mixin btn-profile {
+    margin-top: 33px;
+    display: block;
+    max-width: 428px;
+    width: 428px;
+    padding: 17px 25px;       
+    text-align: left;
+    @include def-text;
+
+    display: flex;
+    justify-content: space-between;
+    background: #E5E5E5;
+}
+
+@mixin btn-profile_active {
+    background: $main-black;
+}
+
+@mixin title {
+    line-height: 64px;
+    font-size: 64px;
+    text-align: center;
+}
+
+@mixin label {
+    margin-top: 45px;
+    margin-left: 68px;
+    position: relative;
+    display: block;
+    @include def-text;
+    color: $main-black;
+}
+
+@mixin label-span {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(41%);
+    left: -68px;
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+    background-color:#E8E8E8;
+}
+
+@mixin label-radio {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+@mixin label-checked {
+    background-color: $main-orange
+}
+
+@mixin btn-prev {
+    width: 298px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin btn-next {
+    width: 298px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textarea {
+    background: #FFFFFF;
+    border: 0.3px solid #8E8E8E;
+    padding: 34px 20px 70px;
+    width: 757px;
+    resize: none;
+}
+
+@mixin circle {
+    border-radius: 50%;
+    background: $main-orange;
+    cursor: pointer;
+    @include flex-center;
 }

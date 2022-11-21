@@ -1,0 +1,17 @@
+.messages {
+    margin-top: 95px;
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 64px;
+        color: $main-black;
+    }
+
+    &__wrapper {
+        padding-left: calc(78px + 27px);
+    }
+
+    .message {
+
+    }
+}

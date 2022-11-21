@@ -1,0 +1,130 @@
+@import "vars";
+.login {
+    &__title {
+        margin-top: 132px;
+        color: $main-black;
+        @include title;
+    }
+
+    &__input {
+        margin: 86px auto 0;
+        width: 656px;
+        height: 93px;
+        padding: 26px 30px;
+        display: block;
+    }
+
+    &__btn {
+        display: block;
+        margin: 43px auto 0;
+        width: 656px;
+        height: 93px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 35px;
+        background: $main-orange;
+    }
+
+
+    &__subtitle {
+        margin-top: 28px;
+        text-align: center;
+        font-size: 32px;
+        line-height: 32px;
+        color: #585858;
+    }
+
+    &__btns {
+        margin-top: 43px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn-prev {
+        margin-right: 64px;
+
+       @include btn-prev;
+    }
+
+    &__btn-next {
+        @include btn-next;
+        background: $main-orange;
+
+        img {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        margin-top: 83px;
+    }
+
+    &__wrap-left {
+        margin-right: 180px;
+    }
+
+    &__wrapper {
+        margin-top: 44px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__label {
+        font-size: 36px;
+        line-height: 36px;
+        color: $main-black;
+    }
+
+    &__label-input {
+        display: block;
+        margin-top: 18px;
+
+        width: 648px;
+        height: 78px;
+        padding: 25px 15px;
+    }
+
+    &__buttons {
+        margin-top: 87px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrap-subtitle {
+        margin-top: 40px;
+        @include def-text;
+        color: #353535;
+    }
+
+    &__profile {
+
+        @include flex-center;
+
+        position: relative;
+        width: 309px;
+        height: 419px;
+        border-radius: 4px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        background: #EDEDED;
+        margin: 87px auto 0;
+
+        .circle {
+            cursor: pointer;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            width: 93px;
+            height: 93px;
+            background: $main-orange;
+            border-radius: 50%;
+            @include flex-center;
+        }
+    }
+
+
+
+}

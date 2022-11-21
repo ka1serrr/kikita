@@ -118,3 +118,11 @@ body {
 .btn {
     @include btn;
 }
+
+.btn__profile {
+    @include btn-profile;
+}
+
+.textarea {
+    @include textarea;
+}
